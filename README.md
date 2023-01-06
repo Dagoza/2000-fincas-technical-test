@@ -1,10 +1,13 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+Debido a que las APIs procedentes de https://serviciosrestqa.federaciondecafeteros.org/rest/chatbot/repauthpro están inaccesibles por CORS, desde mi IP\
+\
+Se mockearon las siguientes APIs:\
+Auth = [https://reqres.in/api/login](https://reqres.in/api/login)\
+Las credenciales son:\
+usuario:"eve.holt@reqres.in"\
+password: "cityslicka"\
+get productores = [https://mocki.io/v1/7a70e6ef-4c29-4d27-91a3-34da7c541b01](https://mocki.io/v1/7a70e6ef-4c29-4d27-91a3-34da7c541b01)\
 
 ### `npm start`
 
