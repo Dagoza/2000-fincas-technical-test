@@ -1,0 +1,36 @@
+
+header.header:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 15px;
+  background: #a10f2a;
+  border-bottom: 1px #fff solid;
+}
+
+h1.header__title a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+
+}
+h1.header__title a:link, h1.header__title a:visited, h1.header__title a:active {
+  text-decoration:none;
+}
+h1.header__title a span {
+  padding: 20px;
+  color: #fff;
+  text-decoration: none !important;
+  font-size: 1.5em;
+  width: 268px;
+  text-align: center;
+}
+h1.header__title a img {
+  background-color: #a10f2a;
+  margin-left: 2%;
+  width: 163px;
+  z-index: 1;
+}

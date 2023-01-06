@@ -17,31 +17,33 @@ export const Login = () => {
 
   return (
     <form ref={form}>
-      <header>Inicia sesión</header>
-      <label>
-        <p>Nombre de usuario</p>
-        <input
-          type="text"
-          placeholder="Username"
-          name="username"
-          value="eve.holt@reqres.in"
-          id="username"
-        />
-      </label>
-      <label>
-        <p>Password</p>
-        <input
-          type="password"
-          placeholder="password"
-          name="password"
-          value="cityslicka"
-          id="password"
-        />
-      </label>
-      <div>
-        <button type="button" onClick={handleSubmit}>
-          Submit
-        </button>
+      <div class="login">
+        <header>Inicia sesión</header>
+        <label>
+          <p>Nombre de usuario</p>
+          <input
+            type="text"
+            placeholder="Username"
+            name="username"
+            value="eve.holt@reqres.in"
+            id="username"
+          />
+        </label>
+        <label>
+          <p>Password</p>
+          <input
+            type="password"
+            placeholder="password"
+            name="password"
+            value="cityslicka"
+            id="password"
+          />
+        </label>
+        <div>
+          <button type="button" onClick={handleSubmit}>
+            Submit
+          </button>
+        </div>
       </div>
     </form>
   );

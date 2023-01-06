@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { i18n } from "../constants/i18n-ES";
 import { useAuth } from "../hooks/useAuth";
 import { useProducers } from "../hooks/useProducers";
-import "./styles/Login.css";
+import "./styles/Registers.css";
 
 export const Registers = () => {
   const { checkSession } = useAuth();
