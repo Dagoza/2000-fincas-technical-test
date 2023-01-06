@@ -17,7 +17,7 @@ export const Login = () => {
 
   return (
     <form ref={form}>
-      <div class="login">
+      <div className="login">
         <header>Inicia sesión</header>
         <label>
           <p>Nombre de usuario</p>

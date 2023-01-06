@@ -23,15 +23,15 @@ export const Registers = () => {
           <th>{i18n.name}</th>
           <th>{i18n.phoneNumber}</th>
         </tr>
-        <tr>
-          {producers.map((item) => (
+        {producers.map((item) => (
+          <tr key={item.docNumber}>
             <>
               <td key={`${item.docNumber}-docNumber`}>{item.docNumber}</td>
               <td key={`${item.docNumber}-name`}>{item.docNumber}</td>
               <td key={`${item.docNumber}-phoneNumber`}>{item.docNumber}</td>
             </>
-          ))}
-        </tr>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
