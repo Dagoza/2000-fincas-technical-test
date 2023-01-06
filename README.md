@@ -4,9 +4,11 @@ Debido a que las APIs procedentes de https://serviciosrestqa.federaciondecafeter
 \
 Se mockearon las siguientes APIs:\
 Auth = [https://reqres.in/api/login](https://reqres.in/api/login)\
+\
 Las credenciales son:\
 usuario:"eve.holt@reqres.in"\
 password: "cityslicka"\
+\
 get productores = [https://mocki.io/v1/7a70e6ef-4c29-4d27-91a3-34da7c541b01](https://mocki.io/v1/7a70e6ef-4c29-4d27-91a3-34da7c541b01)\
 
 ### `npm start`
