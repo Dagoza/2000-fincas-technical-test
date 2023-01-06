@@ -6,4 +6,8 @@ export const i18n = {
   documentNumber: "Número de documento",
   name: "Nombre",
   phoneNumber: "Número celular",
+  login: "Inicia sesión",
+  userName: "Nombre de usuario",
+  password: "Password",
+  signIn: "Ingresar",
 };

@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
+import { i18n } from "../constants/i18n-ES";
 import { useAuth } from "../hooks/useAuth";
 import "./styles/Login.css";
 
@@ -18,22 +19,22 @@ export const Login = () => {
   return (
     <form ref={form}>
       <div className="login">
-        <header>Inicia sesión</header>
+        <header>{i18n.login}</header>
         <label>
-          <p>Nombre de usuario</p>
+          <p>{i18n.userName}</p>
           <input
             type="text"
-            placeholder="Username"
+            placeholder={i18n.userName}
             name="username"
             value="eve.holt@reqres.in"
             id="username"
           />
         </label>
         <label>
-          <p>Password</p>
+          <p>{i18n.password}</p>
           <input
             type="password"
-            placeholder="password"
+            placeholder={i18n.password}
             name="password"
             value="cityslicka"
             id="password"
@@ -41,7 +42,7 @@ export const Login = () => {
         </label>
         <div>
           <button type="button" onClick={handleSubmit}>
-            Submit
+            {i18n.signIn}
           </button>
         </div>
       </div>

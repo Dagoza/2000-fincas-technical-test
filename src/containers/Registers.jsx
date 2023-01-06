@@ -11,7 +11,6 @@ export const Registers = () => {
   useEffect(() => {
     checkSession();
     getProducers();
-    console.log(producers);
   }, producers);
 
   return (
