@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `create docker`
 
-docker build -t 2000-fincas-technical-test
+docker build -t 2000-fincas-technical-test \
 docker run -p 3000:3000 2000-fincas-technical-test
 
 ### `npm test`
