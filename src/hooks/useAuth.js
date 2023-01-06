@@ -1,12 +1,16 @@
-import { useState } from "react";
 import { useLocalStorage } from "./useLocalStorage";
-import { v4 as uuidv4 } from "uuid";
+
+import { useRequest } from "./useRequest";
+import { endpoints } from "../constants/endpoints";
 
 export const useAuth = () => {
-  const [todoList, saveTodos] = useLocalStorage("token", "");
+  const [tokenSaved, saveToken] = useLocalStorage("token", "");
+  const [postRequest] = useRequest("token", "");
 
   const createSession = (payload) => {
-    const id = uuidv4();
+    const { token } = postRequest(endpoints.login, payload);
+    console.log(token);
+    // saveToken(token);
   };
 
   return {

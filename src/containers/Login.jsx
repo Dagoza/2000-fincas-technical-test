@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
+import { useAuth } from "../hooks/useAuth";
 import "./styles/Login.css";
 
 export const Login = () => {
   const form = useRef(null);
+  const { createSession } = useAuth();
 
   const handleSubmit = () => {
     const formData = new FormData(form.current);
@@ -10,7 +12,7 @@ export const Login = () => {
       user: formData.get("username"),
       password: formData.get("password"),
     };
-    console.log(userData);
+    createSession(userData);
   };
 
   return (
