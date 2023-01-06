@@ -14,6 +14,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `create docker`
+
+docker build -t 2000-fincas-technical-test
+docker run -p 3000:3000 2000-fincas-technical-test
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
