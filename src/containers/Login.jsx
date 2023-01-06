@@ -8,6 +8,10 @@ export const Login = () => {
   const { createSession } = useAuth();
 
   const handleSubmit = () => {
+    console.log({
+      usuario: "eve.holt@reqres.in",
+      password: "cityslicka",
+    });
     const formData = new FormData(form.current);
     const userData = {
       username: formData.get("username"),
@@ -26,7 +30,6 @@ export const Login = () => {
             type="text"
             placeholder={i18n.userName}
             name="username"
-            value="eve.holt@reqres.in"
             id="username"
           />
         </label>
@@ -36,7 +39,6 @@ export const Login = () => {
             type="password"
             placeholder={i18n.password}
             name="password"
-            value="cityslicka"
             id="password"
           />
         </label>

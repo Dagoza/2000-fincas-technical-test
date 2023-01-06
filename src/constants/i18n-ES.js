@@ -8,6 +8,6 @@ export const i18n = {
   phoneNumber: "Número celular",
   login: "Inicia sesión",
   userName: "Nombre de usuario",
-  password: "Password",
+  password: "Contraseña",
   signIn: "Ingresar",
 };
