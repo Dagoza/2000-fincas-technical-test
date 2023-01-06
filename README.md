@@ -23,8 +23,8 @@ You may also see any lint errors in the console.
 
 Se crearon 2 dockerfile, los cuales dockerfile está enfocado a correr un docker con el proyecto para ambientes no productivos y dockerfile.nginx al compilar el proyecto está enfocado a ambientes productivos\
 \
-docker build -t 2000-fincas-technical-test \
-docker run -p 3000:3000 2000-fincas-technical-test
+docker build -t 2000fincas \
+docker run -p 3000:3000 2000fincas
 
 ### `npm test`
 
