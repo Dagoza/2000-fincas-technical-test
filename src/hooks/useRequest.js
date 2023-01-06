@@ -2,10 +2,14 @@ import axios from "axios";
 
 export const useRequest = () => {
   const postRequest = async (endpoint, req) => {
-    const resp = await axios.post(endpoint, req);
-    console.log(resp);
-    return resp;
+    const { data } = await axios.post(endpoint, req);
+    return data;
   };
 
-  return [postRequest];
+  const getRequest = async (endpoint, headers) => {
+    const { data } = await axios.get(endpoint, { headers });
+    return data;
+  };
+
+  return [postRequest, getRequest];
 };

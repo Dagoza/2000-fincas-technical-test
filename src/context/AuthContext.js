@@ -1,12 +1,9 @@
-import { createContext } from "react";
-import { useAuth } from "../hooks/useAuth";
+import { createContext, useState } from "react";
 
 export const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
-  const toDoList = useAuth();
+  const state = useState();
 
-  return (
-    <AuthContext.Provider value={toDoList}>{children}</AuthContext.Provider>
-  );
+  return <AuthContext.Provider value={state}>{children}</AuthContext.Provider>;
 };

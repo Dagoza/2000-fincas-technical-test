@@ -9,7 +9,7 @@ export const Login = () => {
   const handleSubmit = () => {
     const formData = new FormData(form.current);
     const userData = {
-      user: formData.get("username"),
+      username: formData.get("username"),
       password: formData.get("password"),
     };
     createSession(userData);
@@ -24,6 +24,7 @@ export const Login = () => {
           type="text"
           placeholder="Username"
           name="username"
+          value="eve.holt@reqres.in"
           id="username"
         />
       </label>
@@ -33,6 +34,7 @@ export const Login = () => {
           type="password"
           placeholder="password"
           name="password"
+          value="cityslicka"
           id="password"
         />
       </label>
