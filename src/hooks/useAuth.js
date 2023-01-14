@@ -25,6 +25,7 @@ export const useAuth = () => {
   const checkSession = async (payload) => {
     if (!tokenSaved) {
       navigate("/" + routes.login);
+      toast.error("Su sesión a expirado");
     }
   };
 

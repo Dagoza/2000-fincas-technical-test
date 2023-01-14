@@ -1,4 +1,3 @@
-
 header.header:before {
   content: "";
   width: 100%;
@@ -15,10 +14,11 @@ h1.header__title a {
   justify-content: flex-start;
   align-items: center;
   width: fit-content;
-
 }
-h1.header__title a:link, h1.header__title a:visited, h1.header__title a:active {
-  text-decoration:none;
+h1.header__title a:link,
+h1.header__title a:visited,
+h1.header__title a:active {
+  text-decoration: none;
 }
 h1.header__title a span {
   padding: 20px;
@@ -33,4 +33,16 @@ h1.header__title a img {
   margin-left: 2%;
   width: 163px;
   z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  h1.header__title a span {
+    padding: 10px;
+    font-size: 1em;
+    width: 190px;
+    line-height: 1.2;
+  }
+  h1.header__title a img {
+    width: 133px;
+  }
 }

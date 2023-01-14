@@ -25,6 +25,7 @@ Se crearon 2 dockerfile, los cuales dockerfile está enfocado a correr un docker
 \
 docker build . -t 2000fincas \
 docker run -p 3000:3000 2000fincas
+docker build -t nombre-de-la-imagen -f nombre-del-archivo .
 
 o si es NGINX
 docker run -p 80:80 2000fincas
